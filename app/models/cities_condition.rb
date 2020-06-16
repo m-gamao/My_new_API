@@ -1,3 +1,3 @@
 class CitiesCondition < ApplicationRecord
-  belongs_to :conditions
+  belongs_to :condition
 end

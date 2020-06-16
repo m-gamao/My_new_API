@@ -1,9 +1,9 @@
 class Api::V1::ConditionsController < ApplicationController
     def index
       conditions = Condition.all
-     #render json: conditions
+      render json: conditions
      
-      render json: ConditionSerializer.new(@conditions)
+      # render json: ConditionSerializer.new(@conditions)
     end
    
     def create
@@ -18,7 +18,7 @@ class Api::V1::ConditionsController < ApplicationController
     private
    
     def condition_params
-      params.require(:condition).permit(:description, :temperature, :city_id)
+      params.require(:condition).permit(:description, :temperature)
     end
   end
    

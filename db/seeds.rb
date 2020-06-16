@@ -7,66 +7,73 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #WEATHER CONDITIONS:
-c1 = Condition.create(
+c5 = Condition.create(
+# city: 'Oslo',    
 description: 'freezing / clear skies',
 temperature: '32 degrees',
 outfit: 'winter coat, layers, pants, socks, boots, mittens, scarf')
 
 c2 = Condition.create(
+# city: 'Chicago',
 description:'cold',
 temperature: '45 degrees',
 outfit: 'winter/fall coat, sweater, pants, socks, boots/shoes, mittens or scarf')
 
 c3 = Condition.create(
+# city: 'New York City',
 description:'cold/rainy',
 temperature: '49 degrees',
 outfit: 'winter/fall coat or raincoat, sweater, pants, socks, rain boots, mittens, umbrella')
 
 c4 = Condition.create(
-description: 'cold/snowy',
-temperature: '40 degrees',
-outfit: 'winter coat, sweater, pants, socks, snow boots, mittens, scarf')
+# city: 'Paris',
+description: 'hot',
+temperature: '90 degrees',
+outfit: 'T-shirt, shorts, sandals/flip flops')
 
 c5 = Condition.create(
+# city: 'London',
 description: 'cool',
 temperature: '60 degrees',
 outfit: 'light jacket, shirt, pants, flats/heels')
 
 c6 = Condition.create(
+# city: 'Los Angeles',
 description: 'warm',
 temperature: '70 degrees',
 outfit: 't-shirt, jeans, sneakers, shorts/skirt, sandals')
 
 
+# Cities_conditions:
 
 CitiesCondition.create(
 name: 'New York City',
-condition_id: c1
+condition_id: c3.id
 )
 
 CitiesCondition.create(
 name: 'Los Angeles',
-condition_id: c6
+condition_id: c6.id
 )
 
 CitiesCondition.create(
 name: 'Chicago',
-condition_id: c2)
-
+condition_id: c2.id
+)
 
 CitiesCondition.create(
 name: 'London',
-condition_id: c3
+condition_id: c3.id
 )
 
 CitiesCondition.create(
 name: 'Oslo',
-condition_id: c4
+condition_id: c5.id
 )
 
 CitiesCondition.create(
 name: 'Paris',
-condition_id: c5
+condition_id: c4.id
 )
 
 
