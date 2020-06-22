@@ -20,7 +20,12 @@ class Api::V1::CitiesConditionsController < ApplicationController
       render json: {errors: cities_condition.errors.full_messages}, status: unprocessible_entity
     end
   end
- 
+
+  def show
+    cities_condition = CitiesCondition.find(params[:id])
+    render json: cities_condition
+  end 
+  
   private
  
   def cities_condition_params
