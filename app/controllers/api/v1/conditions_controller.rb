@@ -1,10 +1,5 @@
 class Api::V1::ConditionsController < ApplicationController
 
-  # def index
-  #   conditions = Condition.all(condition_params)
-  #   render json: conditions
-  # end
-
   def show
     cities_condition = CitiesCondition.find(params[:id])
     condition = cities_condition.condition
@@ -13,6 +8,7 @@ class Api::V1::ConditionsController < ApplicationController
   
     def new
       condition = Condition.new
+    end
 
     def create
       condition = Condition.all(condition_params)
@@ -28,7 +24,6 @@ class Api::V1::ConditionsController < ApplicationController
     def condition_params
       params.require(:condition).permit(:description, :temperature)
     end
-  end
 end
   
   

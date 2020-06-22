@@ -7,74 +7,68 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-#WEATHER CONDITIONS:
-Condition.create(
-# city: 'Oslo',    
-description: 'freezing/clear skies',
-temperature: '32 degrees',
-outfit: 'winter coat, layers, pants, socks, boots, mittens, scarf')
+#WEATHER CONDITIONS: Each condition has a condition id (1-6)
+Condition.create(  
+description: 'warm/clear skies',
+temperature: '78 degrees',
+outfit: 'short-sleeved shirt, shorts or skirt, sandals')
 
 Condition.create(
-# city: 'Chicago',
-description:'cold',
-temperature: '45 degrees',
-outfit: 'winter/fall coat, sweater, pants, socks, boots/shoes, mittens or scarf')
+description:'hot',
+temperature: '82 degrees',
+outfit: 'short-sleeved shirt, shorts or skirt, sandals')
 
 Condition.create(
-# city: 'New York City',
-description:'cold/rainy',
-temperature: '49 degrees',
-outfit: 'winter/fall coat or raincoat, sweater, pants, socks, rain boots, mittens, umbrella')
+description:'cool/rainy',
+temperature: '68 degrees',
+outfit: 'long-sleeved shirt, light jacket, rain boots, umbrella')
 
 Condition.create(
-# city: 'Paris',
-description: 'hot',
-temperature: '90 degrees',
-outfit: 'T-shirt, shorts, sandals/flip flops')
+description: 'cool / clear skies',
+temperature: '61 degrees',
+outfit: 'long-sleeved shirt, jeans, sneakers')
 
 Condition.create(
-# city: 'London',
+description: 'warm / light rain',
+temperature: '76 degrees',
+outfit: 'light jacket, short-sleeved shirt, jeans, ankle boots')
+
+Condition.create(
 description: 'cool',
-temperature: '60 degrees',
-outfit: 'light jacket, shirt, pants, flats/heels')
-
-Condition.create(
-# city: 'Los Angeles',
-description: 'warm',
-temperature: '70 degrees',
-outfit: 't-shirt, jeans, sneakers, shorts/skirt, sandals')
+temperature: '63 degrees',
+outfit: 'long-sleeved shirt, jeans, sneakers')
 
 
 # Cities_conditions:
 
 CitiesCondition.create(
 name: 'New York City',
-# condition_id: 1.id
+condition_id: 1
 )
 
 CitiesCondition.create(
 name: 'Los Angeles',
-# condition_id: 2.id
+condition_id: 2
 )
 
 CitiesCondition.create(
-name: 'Chicago',
-# condition_id: 3.id
+name: 'Tokyo',
+condition_id: 3
 )
 
 CitiesCondition.create(
 name: 'London',
-# condition_id: 4.id
+condition_id: 4
 )
 
 CitiesCondition.create(
-name: 'Oslo',
-# condition_id: 5.id
+name: 'Beijing',
+condition_id: 5
 )
 
 CitiesCondition.create(
 name: 'Paris',
-# condition_id: 6.id
+condition_id: 6
 )
 
 

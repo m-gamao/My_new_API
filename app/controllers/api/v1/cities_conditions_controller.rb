@@ -3,13 +3,6 @@ class Api::V1::CitiesConditionsController < ApplicationController
   def index
     cities_conditions = CitiesCondition.all
     render json: cities_conditions
-      
-     #options = {
-  ##include associated weather - whatever you put into the below square brackets 
-  ##comes from the associations in the model
-	   #include: [:category]
-# }
-    # render json: CitiesConditionSerializer.new(@cities_conditions)
   end
  
   def create
