@@ -1,7 +1,8 @@
 class Api::V1::ConditionsController < ApplicationController
 
   def show
-    condition = Condition.find(params[:id])
+    cities_condition = CitiesCondition.find(params[:id])
+    condition = cities_condition.condition
     render json: condition
   end
 
