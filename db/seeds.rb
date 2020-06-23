@@ -9,13 +9,13 @@
 
 #WEATHER CONDITIONS: Each condition has a condition id (1-6)
 Condition.create(  
-description: 'warm/clear skies',
-temperature: '78 degrees',
+description: 'warm/mostly sunny',
+temperature: '82 degrees',
 outfit: 'short-sleeved shirt, shorts or skirt, sandals')
 
 Condition.create(
-description:'hot',
-temperature: '82 degrees',
+description:'warm/cloudy',
+temperature: '79 degrees',
 outfit: 'short-sleeved shirt, shorts or skirt, sandals')
 
 Condition.create(
@@ -43,32 +43,32 @@ outfit: 'long-sleeved shirt, jeans, sneakers')
 
 CitiesCondition.create(
 name: 'New York City',
-condition_id: 1
+condition_id: "1"
 )
 
 CitiesCondition.create(
 name: 'Los Angeles',
-condition_id: 2
+condition_id: "2"
 )
 
 CitiesCondition.create(
 name: 'Tokyo',
-condition_id: 3
+condition_id: "3"
 )
 
 CitiesCondition.create(
 name: 'London',
-condition_id: 4
+condition_id: "4"
 )
 
 CitiesCondition.create(
 name: 'Beijing',
-condition_id: 5
+condition_id: "5"
 )
 
 CitiesCondition.create(
 name: 'Paris',
-condition_id: 6
+condition_id: "6"
 )
 
 
