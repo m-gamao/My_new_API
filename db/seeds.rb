@@ -10,33 +10,33 @@
 #WEATHER CONDITIONS: Each condition has a condition id (1-6)
 Condition.create(  
 description: 'warm/mostly sunny',
-temperature: '82 degrees',
-outfit: 'short-sleeved shirt, shorts or skirt, sandals')
+temperature: '82',
+outfit: 'short-sleeved shirt, shorts or skirt, and sandals')
 
 Condition.create(
 description:'warm/cloudy',
-temperature: '79 degrees',
-outfit: 'short-sleeved shirt, shorts or skirt, sandals')
+temperature: '79',
+outfit: 'short-sleeved shirt, shorts or skirt, and sandals')
 
 Condition.create(
 description:'cool/rainy',
-temperature: '68 degrees',
-outfit: 'long-sleeved shirt, light jacket, rain boots, umbrella')
+temperature: '68',
+outfit: 'long-sleeved shirt, light jacket, and rain boots. Bring an umbrella!')
 
 Condition.create(
-description: 'cool / clear skies',
-temperature: '61 degrees',
-outfit: 'long-sleeved shirt, jeans, sneakers')
+description: 'cool/clear skies',
+temperature: '61',
+outfit: 'long-sleeved shirt, jeans, and sneakers')
 
 Condition.create(
-description: 'warm / light rain',
-temperature: '76 degrees',
-outfit: 'light jacket, short-sleeved shirt, jeans, ankle boots')
+description: 'warm today/light rain',
+temperature: '76',
+outfit: 'light jacket, short-sleeved shirt, jeans, and ankle boots. Bring an umbrella!')
 
 Condition.create(
 description: 'cool',
-temperature: '63 degrees',
-outfit: 'long-sleeved shirt, jeans, sneakers')
+temperature: '63',
+outfit: 'long-sleeved shirt, jeans, and sneakers')
 
 
 # Cities_conditions:
