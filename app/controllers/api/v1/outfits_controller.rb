@@ -1,5 +1,10 @@
 class Api::V1::OutfitsController < ApplicationController
 
+  def index
+    outfits = Outfit.all
+    render json: outfits
+  end
+
   def show
     outfit = Outfit.find(params[:id])
     render json: outfit  
