@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       resources :conditions
       resources :cities_conditions  #, only: [:index, :create]
       resources :outfits
+      resources :sessions, only: [:create]
+     
     end
   end
 end

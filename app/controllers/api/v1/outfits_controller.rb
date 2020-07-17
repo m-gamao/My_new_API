@@ -27,6 +27,10 @@ class Api::V1::OutfitsController < ApplicationController
     outfit = Outfit.find_by(params[:id])
   end
 
+  def update
+    outfit = Outfit.find_by(params[:id])
+  end
+
   private
       
   def outfit_params
