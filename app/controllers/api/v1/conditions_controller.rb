@@ -18,6 +18,13 @@ class Api::V1::ConditionsController < ApplicationController
         render json: {errors: condition.errors.full_messages}, status: unprocessible_entity
       end
     end
+
+  def update
+    cities_condition = CitiesCondition.find(params[:cities_condition_id])
+    condition = cities_condition.condition
+    condition.update(:outfit => params[:outfit])
+      render json: condition
+    end
     
     private
    
