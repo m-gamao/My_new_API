@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :cities_conditions  #, only: [:index, :create]
       resources :outfits
       resources :sessions, only: [:create]
-      patch "update_outfit", to: "conditions#update"
+  
     end
   end
 end

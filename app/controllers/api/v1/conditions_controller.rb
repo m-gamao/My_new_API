@@ -6,9 +6,9 @@ class Api::V1::ConditionsController < ApplicationController
     render json: condition
   end
   
-    def new
-      condition = Condition.new
-    end
+  def new
+    condition = Condition.new
+  end
 
     def create
       condition = Condition.all(condition_params)
